@@ -1,0 +1,36 @@
+{
+  "name": "browser-activity-monitor",
+  "version": "1.0.0",
+  "description": "A simple activity monitor to alert you when the user becomes active or inactive",
+  "main": "index.js",
+  "main:esnext": "index.2015.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "build": "rm ./*.d.ts; tsc -d -m es2015 -t es6 && mv ./index.js ./index.es2015.js && tsc -m commonjs -t es5;",
+    "pretest": "npm run build",
+    "prepublish": "npm test",
+    "test": "jest test.js",
+    "tdd": "npm run watch & jest --watch",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:coatue/browser-activity-monitor.git"
+  },
+  "keywords": ["browser", "activity", "chrome", "pagevisibility", "visible", "hidden", "visibility", "open"],
+  "author": "Boris Cherny <boris@performancejs.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/coatue/browser-activity-monitor/issues"
+  },
+  "homepage": "https://github.com/coatue/browser-activity-monitor#readme",
+  "devDependencies": {
+    "@types/jest": "^16.0.4",
+    "jest": "^18.1.0",
+    "tslint": "^4.3.1",
+    "typescript": "^2.1.5"
+  },
+  "dependencies": {
+    "eventemitter2": "^2.2.2"
+  }
+}
