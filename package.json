@@ -1,6 +1,6 @@
 {
   "name": "browser-activity-monitor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple activity monitor to alert you when the user becomes active or inactive",
   "main": "index.js",
   "main:esnext": "index.2015.js",
