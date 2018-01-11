@@ -31,6 +31,6 @@
     "typescript": "^2.1.5"
   },
   "dependencies": {
-    "eventemitter2": "^4.0.0"
+    "eventemitter2": "^5.0.1"
   }
 }
