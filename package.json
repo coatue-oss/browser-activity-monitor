@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "A simple activity monitor to alert you when the user becomes active or inactive",
   "main": "index.js",
-  "main:esnext": "index.2015.js",
+  "main:esnext": "index.es2015.js",
   "typings": "index.d.ts",
   "scripts": {
     "build": "rm ./*.d.ts; tsc -d -m es2015 -t es6 && mv ./index.js ./index.es2015.js && tsc -m commonjs -t es5;",
